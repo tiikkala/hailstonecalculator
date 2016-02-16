@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  *
  * @author tapio
  */
-public class JHailstonecalculator {
+public class Main {
 
     public static void main(String[] args) {
         TextInterface textInterface = new TextInterface();
@@ -23,7 +23,6 @@ public class JHailstonecalculator {
         FileWriter fWriter;
         BufferedWriter writer;
 
-        textInterface.start();
         int input = textInterface.input();
         calculator.calculate(input);
         
@@ -41,7 +40,7 @@ public class JHailstonecalculator {
             System.out.println("Number of steps to reach 1: " + Integer.toString(numberOfSteps));
             System.out.println("Second largest number in the sequence: " + Integer.toString(secondLargestNumber));
         } catch (IOException ex) {
-            Logger.getLogger(JHailstonecalculator.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

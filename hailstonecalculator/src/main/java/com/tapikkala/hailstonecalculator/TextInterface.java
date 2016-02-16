@@ -19,13 +19,10 @@ public class TextInterface {
         console = new Scanner(System.in);
     }
 
-    public void start() {
-        System.out.println("Give a numeber: ");
-    }
-
     public int input() {
         while (true) {
             try {
+                System.out.println("Give a number:");
                 int input = Integer.parseInt(console.nextLine());
                 if (input <= 1) {
                     System.out.println(invalidInputMessage());
