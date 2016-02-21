@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class TextInterface {
 
-    private Scanner console;
+    private final Scanner console;
 
     public TextInterface() {
         console = new Scanner(System.in);
@@ -21,7 +21,7 @@ public class TextInterface {
         while (true) {
             try {
                 System.out.println("Give a number:");
-                int input = Integer.parseInt(console.nextLine());
+                final int input = Integer.parseInt(console.nextLine());
                 if (input <= 1) {
                     System.out.println(invalidInputMessage());
                     continue;

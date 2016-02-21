@@ -6,24 +6,20 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author tapio
- */
 public class Main {
 
     public static void main(String[] args) {
-        TextInterface textInterface = new TextInterface();
-        Calculator calculator = new Calculator();
-        FileWriter fWriter;
-        BufferedWriter writer;
+        final TextInterface textInterface = new TextInterface();
+        final Calculator calculator = new Calculator();
+        final FileWriter fWriter;
+        final BufferedWriter writer;
 
-        int input = textInterface.input();
+        final int input = textInterface.input();
         calculator.calculate(input);
         
         try {
-        int numberOfSteps = calculator.getNumbeofStepsToOne();
-        int secondLargestNumber = calculator.getSecondLargestNumberInSequence();
+        final int numberOfSteps = calculator.getNumbeofStepsToOne();
+        final int secondLargestNumber = calculator.getSecondLargestNumberInSequence();
             fWriter = new FileWriter("hailstonesequence.html");
             writer = new BufferedWriter(fWriter);
             writer.write(beginHtml());
