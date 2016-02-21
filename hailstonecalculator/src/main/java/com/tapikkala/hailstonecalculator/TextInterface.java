@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.tapikkala.hailstonecalculator;
 
 import java.util.Scanner;
 
 /**
- *
- * @author tapio
+ *A simple text interface for using the calculator,
  */
 public class TextInterface {
 
@@ -19,6 +13,10 @@ public class TextInterface {
         console = new Scanner(System.in);
     }
 
+    /**
+     *Methove invokes a message for invalid input, if the given input is not an integer
+     * greater than 1.
+     */
     public int input() {
         while (true) {
             try {
