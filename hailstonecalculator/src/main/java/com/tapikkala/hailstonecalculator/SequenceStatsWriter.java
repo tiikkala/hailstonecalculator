@@ -7,7 +7,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * Class provides a method for writing an html file containing the statistics of
+ * the Hailstone sequence of a given integer.
  */
 public class SequenceStatsWriter {
 
@@ -25,6 +26,12 @@ public class SequenceStatsWriter {
         }
     }
 
+    /**
+     * Method writes an html file containing the statistics of the Hailstone
+     * sequence of a given integer to the location from which the program is run.
+     *
+     * @param input integer from which the sequence is calculater
+     */
     public void writeSequenceStats(int input) {
         try {
             this.calculator.calculate(input);
