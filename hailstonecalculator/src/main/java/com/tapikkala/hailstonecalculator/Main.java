@@ -28,6 +28,7 @@ public class Main {
             writer.write("<p> Second largest number in the sequence: " + Integer.toString(secondLargestNumber) + "</p>\n");
             writer.write(closeHtml());
             writer.close();
+            fWriter.close();
             System.out.println("Number of steps to reach 1: " + Integer.toString(numberOfSteps));
             System.out.println("Second largest number in the sequence: " + Integer.toString(secondLargestNumber));
         } catch (IOException ex) {
